@@ -1,0 +1,39 @@
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    align-items: center;
+
+    &.item {
+        color: var(--primary-text-color);
+        display: flex;
+    }
+}
+
+.auth-link {
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    color: var(--primary-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--accent-color);
+    }
+}
+
+.auth-nav .item+.item {
+    margin-left: 30px;
+}
+
+.auth-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}

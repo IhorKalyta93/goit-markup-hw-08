@@ -1,0 +1,190 @@
+.modal {
+    position: absolute;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    background-color: var(--main-light-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    background-color: var(--main-light-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    &:hover .close-icon,
+    &:focus .close-icon {
+        fill: var(--accent-color);
+    }
+}
+
+.close-icon {
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal__title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgba(33, 33, 33, 1);
+}
+
+.modal__form-group-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.modal__form-group-item {
+    position: relative;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 1);
+}
+
+.form-input {
+    width: 100%;
+    padding: 11px 12px 11px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    color: #212121;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    outline: transparent;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus+.icon-form {
+        fill: var(--accent-color);
+    }
+
+    &:focus {
+        border-color: var(--accent-color);
+    }
+}
+
+.icon-form {
+    fill: rgba(33, 33, 33, 1);
+    position: absolute;
+    pointer-events: none;
+    bottom: 11px;
+    left: 12px;
+    border: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.form-textarea {
+    resize: none;
+    padding: 12px 16px;
+    outline: transparent;
+    width: 100%;
+    height: 120px;
+    border: 1px solid var(--modal-border-color);
+    border-radius: 4px;
+    color: var(--text-color-dark);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: var(--placeholder-color);
+    }
+
+    &:focus {
+        border-color: var(--accent-color)
+    }
+}
+
+.form__label-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+}
+
+.form-input-check {
+    appearance: none;
+
+    &:checked+.checkbox-icon {
+        background-color: var(--accent-color);
+        border: 2px solid transparent;
+    }
+}
+
+.checkbox-icon {
+    fill: white;
+    display: flex;
+    border-radius: 3px;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--text-color-dark);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-link {
+    color: var(--accent-color);
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+}
+
+.button-modal {
+    width: 200px;
+    padding: 10px 10px;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--button-hover-color);
+    }
+}

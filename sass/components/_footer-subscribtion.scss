@@ -1,0 +1,26 @@
+.footer__joinus {
+    display: inline-block;
+    margin-left: 70px;
+    width: 206px;
+}
+
+.footer__joinus-title {
+    margin-bottom: 20px;
+    color: var(--main-light-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer__joinus-list {
+    display: flex;
+}
+
+//social-network
+.sn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

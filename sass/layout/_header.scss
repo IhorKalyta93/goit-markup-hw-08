@@ -1,0 +1,15 @@
+.header {
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-color: rgba(236, 236, 236, 1);
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}

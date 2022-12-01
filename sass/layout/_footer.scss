@@ -5,8 +5,17 @@
 }
 
 .footer-container {
-    display: flex;
-    align-items: baseline;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+    }
 }
 
 .footer__text {
@@ -41,6 +50,10 @@
 .footer__adress {
     display: inline-block;
     width: 231px;
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
 }
 
 .footer__address-list .item {

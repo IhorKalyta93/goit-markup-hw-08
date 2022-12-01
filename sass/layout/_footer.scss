@@ -2,9 +2,15 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background-color-dark);
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .footer-container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 
     @media screen and (max-width: 1199px) {
         text-align: center;
@@ -48,12 +54,11 @@
 }
 
 .footer__adress {
-    display: inline-block;
     width: 231px;
 
-    @media screen and (max-width: 1199px) {
-        margin-bottom: 60px;
-    }
+    // @media screen and (max-width: 1199px) {
+    //     margin-bottom: 60px;
+    // }
 }
 
 .footer__address-list .item {

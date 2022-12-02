@@ -1,8 +1,7 @@
 .footer__joinus {
-    width: 206px;
 
     @media screen and (min-width: 768px) {
-        margin-left: 165px;
+
         margin-bottom: 60px;
     }
 
@@ -12,6 +11,10 @@
 
     @media screen and (min-width: 1200px) {
         margin-left: 93px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        width: 50%;
     }
 }
 

@@ -588,14 +588,25 @@ ul {
 .mobile-contacts__link:hover, .mobile-contacts__link:focus {
   color: var(--accent-color);
 }
-.mobile-contacts__link--big-size {
+.mobile-contacts__link--upsized {
   font-size: 34px;
   line-height: 1.1764705882;
 }
 @media screen and (max-width: 380px) {
-  .mobile-contacts__link--big-size {
+  .mobile-contacts__link--upsized {
     font-size: 28px;
     line-height: 1.2857142857;
+  }
+}
+
+.mobile-contacts__link--upsized {
+  font-size: 34px;
+  line-height: 1.17;
+}
+@media screen and (max-width: 380px) {
+  .mobile-contacts__link--upsized .mobile-contacts__link--upsized {
+    font-size: 28px;
+    line-height: 1.3;
   }
 }
 

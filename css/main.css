@@ -1278,7 +1278,7 @@ ul {
   }
 }
 @media screen and (max-width: 767px) {
-  .portfolio:not(:last-child) {
+  .portfolio .portfolio-item:not(:last-child) {
     margin-bottom: 30px;
   }
 }

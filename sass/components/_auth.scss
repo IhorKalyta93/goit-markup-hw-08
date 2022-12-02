@@ -1,16 +1,5 @@
 .auth-nav {
-    display: flex;
     margin-left: auto;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    align-items: center;
-
-    &.item {
-        color: var(--primary-text-color);
-        display: flex;
-    }
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -28,11 +17,12 @@
 
 .auth-link {
     text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
     display: flex;
     align-items: center;
     color: var(--primary-text-color);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 768px) {
@@ -50,15 +40,14 @@
     }
 
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
         color: var(--accent-color);
     }
 }
 
-.auth-nav .item+.item {
-    margin-left: 30px;
-}
+// .auth-nav .item+.item {
+//     margin-left: 30px;
+// }
 
 .auth-icon {
     margin-right: 10px;

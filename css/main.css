@@ -448,7 +448,6 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .signup__label {
-    width: 450px;
     margin-bottom: 20px;
   }
 }
@@ -689,7 +688,7 @@ ul {
 }
 @media screen and (max-width: 440px) {
   .social-list__link {
-    font-size: 10px;
+    font-size: 14px;
     line-height: 2.2;
   }
 }
@@ -769,6 +768,10 @@ ul {
     font-size: 44px;
     line-height: 1.3636363636;
   }
+}
+
+.hero-button {
+  width: 216px;
 }
 
 .section-features {
@@ -1271,6 +1274,10 @@ ul {
   cursor: pointer;
 }
 
+.portfolio {
+  display: block;
+  flex-wrap: wrap;
+}
 @media screen and (min-width: 768px) {
   .portfolio {
     display: flex;
@@ -1279,7 +1286,7 @@ ul {
   }
 }
 .portfolio .portfolio-item {
-  width: 370px;
+  display: flex;
 }
 @media screen and (min-width: 768px) {
   .portfolio .portfolio-item {

@@ -1117,7 +1117,7 @@ ul {
 }
 
 .checkbox-icon {
-  fill: white;
+  fill: var(--main-light-color);
   display: flex;
   border-radius: 3px;
   width: 16px;

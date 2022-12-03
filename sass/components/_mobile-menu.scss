@@ -120,7 +120,7 @@
     }
 
     &--upsized {
-        @media screen and (max-width: 380px) {
+        @media screen and (max-width: 480px) {
             font-size: 28px;
             line-height: calc(36 / 28);
         }

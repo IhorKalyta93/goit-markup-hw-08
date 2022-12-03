@@ -91,6 +91,19 @@
     margin-bottom: 32px;
 }
 
+.mobile-contacts__link--upsized {
+    font-size: 34px;
+    line-height: 1.17;
+
+
+    @media screen and (max-width: 380px) {
+        .mobile-contacts__link--upsized {
+            font-size: 28px;
+            line-height: 1.3;
+        }
+    }
+}
+
 .mobile-contacts__link {
     text-decoration: none;
     color: var(--primary-text-color);
@@ -117,15 +130,6 @@
     }
 }
 
-.mobile-contacts__link--upsized {
-    font-size: 34px;
-    line-height: 1.17;
-
-
-    @media screen and (max-width: 380px) {
-        .mobile-contacts__link--upsized {
-            font-size: 28px;
-            line-height: 1.3;
-        }
-    }
+.mobile-contacts__active {
+    color: var(--accent-color);
 }

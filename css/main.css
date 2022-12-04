@@ -1308,55 +1308,63 @@ ul {
     gap: 30px;
   }
 }
-.portfolio .portfolio-item {
+
+.portfolio-item {
   display: flex;
 }
 @media screen and (min-width: 768px) {
-  .portfolio .portfolio-item {
+  .portfolio-item {
     flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
-  .portfolio .portfolio-item {
+  .portfolio-item {
     flex-basis: calc((100% - 60px) / 3);
   }
 }
+
 @media screen and (max-width: 767px) {
-  .portfolio .portfolio-item:not(:last-child) {
+  .portfolio-item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
+
 @media screen and (max-width: 1199px) and (min-width: 768px) {
-  .portfolio .portfolio-kostil {
+  .portfolio-kostil {
     margin-bottom: 32px;
   }
 }
-.portfolio .portfolio__link {
+
+.portfolio__link {
   text-decoration: none;
   display: block;
   outline: transparent;
 }
-.portfolio .portfolio__link:hover, .portfolio .portfolio__link:focus {
+.portfolio__link:hover, .portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.portfolio .portfolio__title {
+
+.portfolio__title {
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 1.8;
   letter-spacing: 0.06em;
 }
-.portfolio .portfolio__card {
+
+.portfolio__card {
   padding: 24px;
   border-left: 1px solid rgb(238, 238, 238);
   border-right: 1px solid rgb(238, 238, 238);
   border-bottom: 1px solid rgb(238, 238, 238);
 }
-.portfolio .portfolio__text {
+
+.portfolio__text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
 }
-.portfolio .portfolio__overlay {
+
+.portfolio__overlay {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1371,14 +1379,16 @@ ul {
   padding-left: 24px;
   padding-right: 24px;
 }
-.portfolio .portfolio__wrapper {
+
+.portfolio__wrapper {
   position: relative;
   overflow: hidden;
 }
-.portfolio .portfolio__wrapper:hover .portfolio__overlay, .portfolio .portfolio__wrapper:focus .portfolio__overlay {
+.portfolio__wrapper:hover .portfolio__overlay, .portfolio__wrapper:focus .portfolio__overlay {
   transform: translate(0);
 }
-.portfolio .portfolio__overlay-text {
+
+.portfolio__overlay-text {
   font-size: 18px;
   line-height: 1.75;
   color: var(--main-light-color);

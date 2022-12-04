@@ -1297,9 +1297,6 @@ ul {
   cursor: pointer;
 }
 
-.portfolio {
-  text-decoration: none;
-}
 @media screen and (min-width: 768px) {
   .portfolio {
     display: flex;
@@ -1334,6 +1331,7 @@ ul {
 }
 
 .portfolio-link {
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -1345,7 +1343,6 @@ ul {
 }
 
 .portfolio-box {
-  text-decoration: none;
   position: relative;
   overflow: hidden;
 }
@@ -1370,7 +1367,6 @@ ul {
 }
 
 .portfolio-card {
-  text-decoration: none;
   padding: 20px 24px;
   border: 1px solid rgb(238, 238, 238);
   border-top: none;
@@ -1379,7 +1375,6 @@ ul {
 
 .portfolio-title {
   margin-bottom: 4px;
-  text-decoration: none;
   color: rgb(33, 33, 33);
   font-size: 18px;
   line-height: 2;
@@ -1387,7 +1382,6 @@ ul {
 }
 
 .portfolio-text {
-  text-decoration: none;
   color: rgb(117, 117, 117);
   font-size: 16px;
   line-height: 1.875;

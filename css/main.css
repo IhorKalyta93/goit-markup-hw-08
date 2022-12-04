@@ -1365,6 +1365,12 @@ ul {
 .portfolio-link:hover .portfolio-p, .portfolio-link:focus .portfolio-p {
   transform: translateX(0);
 }
+@media screen and (max-width: 370px) {
+  .portfolio-p {
+    font-size: 14px;
+    padding: 30px 24px;
+  }
+}
 
 .portfolio-card {
   padding: 20px 24px;
